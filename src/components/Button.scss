@@ -1,0 +1,32 @@
+@import "../components/sass/mixins.scss";
+@import "../components/sass/Variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mybtn {
+  width: 150px;
+  height: 42px;
+  border: none;
+  @include subTitle;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background-color: $CTAColor;
+  color: $baseColor;
+}
+
+.secondaryButton {
+  background-color: $baseColor;
+  color: $secondaryColor;
+  border: 2px solid $secondaryColor;
+}
+
+.tetiaryButton {
+  background-color: $secondaryColor;
+  color: $baseColor;
+}

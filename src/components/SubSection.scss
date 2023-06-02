@@ -1,0 +1,75 @@
+@import "../components/sass/mixins.scss";
+@import "../components/sass/Variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SubSection {
+  margin-block: 20px;
+}
+
+.subsection_container {
+  
+  position: relative;
+    // border: 1px solid red;
+  background-color: #fff;
+  color: black;
+}
+
+.subsection_img {
+  width: 84px;
+  height: 120px;
+  //   position: absolute;
+  //   top: -10;
+  margin-bottom: -65px;
+  margin-inline: auto;
+}
+.subsection_card_body {
+  //   background-color: #fff;
+  width: 327px;
+  height: 165px;
+  color: black;
+  @include centerItem;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 20px;
+  background-color: $primaryColor;
+  border-radius: 10px;
+
+  h3 {
+    color: black;
+    @include headFont6;
+    margin-top: 50px;
+  }
+  span {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include overlineFont;
+
+    .fas {
+      color: #646262;
+      font-size: 17.5px;
+      color: $CTAColor;
+    }
+  }
+}
+
+.Button {
+  z-index: 1;
+  //   margin-top: 200px;
+}
+
+// @media screen and () {
+  
+// }

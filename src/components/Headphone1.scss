@@ -1,0 +1,328 @@
+@import "../components/sass/mixins.scss";
+@import "../components/sass/Variables.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+p {
+  color: red;
+}
+span {
+  display: block;
+}
+ul {
+  color: #000;
+  li {
+    color: #000;
+  }
+}
+
+.headphone1_container {
+  margin-top: 10px;
+  .goBack_btn {
+    text-decoration: none;
+    margin-left: 30px;
+    @include bodyFont;
+    color: $secondaryColor;
+    // margin-top: 50px;
+  }
+
+  h2 {
+    @include headFont5;
+    text-align: left;
+  }
+}
+
+.Headphone1 .product {
+  padding-inline: 20px;
+  margin-block: 40px;
+  .product_img {
+    width: 327px;
+    height: 352px;
+    margin-inline: auto;
+    margin-bottom: 5px;
+  }
+
+  .product_details {
+    margin-inline: auto;
+    text-align: left !important;
+
+    span {
+      @include overlineFont;
+      color: $CTAColor;
+      letter-spacing: 4px;
+      margin-top: 10px;
+      text-align: left !important;
+    
+    }
+
+    h2 {
+      @include headFont5;
+      color: #000;
+      margin-block: 20px;
+      text-align: left !important;
+      width: 140px
+    }
+    p {
+      @include bodyFont;
+      color: $secondaryColor;
+      margin-bottom: 20px;
+      text-align: left !important;
+    }
+    input {
+      outline: none;
+      color: $secondaryColor;
+      text-align: center;
+      width: 150px;
+      height: 48px;
+    }
+
+    Button{
+      padding: 0;
+      width: 150px;
+      height: 48px;
+      margin-left: -20px !important;
+    }
+
+    .product_cart_btn {
+      display: flex;
+      width: 300px;
+      // margin-inline: auto;
+    }
+  }
+}
+
+.product_feature {
+  margin-inline: 20px;
+  h2 {
+    @include headFont5;
+    color: $secondaryColor;
+    margin-bottom: 10px;
+  }
+  p {
+    @include bodyFont;
+    color: $secondaryColor;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  table {
+    border-spacing: 10px !important;
+    margin-bottom: 70px;
+    margin-left: 0
+  }
+  td {
+    @include bodyFont;
+    color: $secondaryColor;
+    text-align: left;
+    // padding-left: 10px;
+  }
+  .td1 {
+    color: $CTAColor;
+  }
+}
+
+.product_image_sample {
+  margin-inline: auto;
+
+  img {
+    border-radius: 10px;
+  }
+  .img1,
+  .img2 {
+    width: 327px;
+    height: 174px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+  }
+  .img3 {
+    width: 327px;
+    height: 368px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.alsoLike {
+  h2 {
+    @include headFont5;
+    color: $secondaryColor;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Headphone1 .product{
+    display: flex;
+    gap: 50px;
+
+    .product_details {
+      text-align: left;
+      p{
+        text-align: left;
+      }
+      h2{
+        text-align: left;
+      }
+      span{
+        text-align: left;
+      }
+
+      .product_cart_btn{
+        margin-inline: initial;
+      }
+    }
+    
+  }
+  .product_feature{
+
+    .inTheBox{
+      display: flex;
+      gap: 100px;
+      justify-content: space-evenly;
+      margin-block: 45px;
+    }
+    
+  }
+
+  .product_image_sample{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-inline: auto;
+    .img3{
+      margin-inline: initial;
+    }
+  }
+  .subProduct{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .SubProduct{
+      width: 210px;
+      // border: 1px solid red;
+
+      .subproduct_container{
+
+        .subproduct_img{
+          width: 210px;
+          height: 400px;
+
+          img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            // height: ;
+          }
+        }
+      }
+    }
+  
+  }
+
+  .subSection{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    .SubSection{
+      width: 223px;
+      // margin-left: 20px;
+
+      .subsection_card_body{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1140px) {
+  .product_feature{
+    display: flex;
+    gap: 80px;
+    width: 1000px;
+    margin-inline: auto !important;
+    margin-bottom: 80px;
+    padding-left: 10px;
+
+    .inTheBox{
+      flex-direction: column;
+      gap: 5px;
+      // width: 100%;
+
+    }
+
+    .prodFeat{
+      width: 50%;
+    }
+  }
+
+  .product_image_sample{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-inline: auto;
+
+    .img1, .img2{
+      width: 390px;
+    }
+    .img3{
+      margin-inline: initial;
+      width: 590px;
+    }
+  }
+
+  .subProduct{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-inline: auto;
+    
+    .SubProduct{
+      width: 320px;
+      margin-inline: 10px;
+      // margin-inline: auto;
+
+      .subproduct_container{
+        .subproduct_img{
+          width: 320px;
+          margin-inline: auto;
+          
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // height: ;
+          }
+        }
+      }
+      
+    }
+  }
+
+  .subSection{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    .SubSection{
+      width: 320px;
+      // margin-left: 20px;
+
+      .subsection_card_body{
+        width: 100%;
+      }
+    }
+  }
+}

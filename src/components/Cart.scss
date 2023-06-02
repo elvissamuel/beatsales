@@ -1,0 +1,78 @@
+@import "../components/sass/Variables.scss";
+@import "../components/sass/mixins.scss";
+
+.Cart * {
+  color: #000;
+}
+table {
+  padding: 0px;
+  margin-inline: auto;
+}
+.Cart img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+.Cart {
+  // padding: 20px 10px;
+  // margin-inline: auto;
+}
+.Cart .mybtn {
+  width: 100%;
+  //   height: 32px;
+  margin: 15px auto;
+}
+.Cart .cartProduct td{
+  margin-block: 10px;
+  // margin-inline: 20px;
+}
+
+.productDetails {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+// tr {
+//   border: 1px solid #000;
+// }
+
+// table tr {
+//   border: 1px solid green;
+// }
+
+// .cartProduct td {
+//   margin-right: 30px;
+// }
+.cartHeader {
+  margin-block: 20px;
+}
+td input {
+  width: 100px;
+  padding-block: 4px;
+  text-align: center;
+}
+.pname {
+  font-size: 12px;
+  font-weight: 700;
+  padding-right: 20px;
+}
+.pprice {
+  @include subTitle;
+}
+.inputBox {
+  padding-left: 10px;
+}
+
+.cartHeader th {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-inline: 10px;
+}
+.close {
+  padding-inline: 15px;
+}
+.close b {
+  font-size: 11px;
+  color: $secondaryColor;
+}

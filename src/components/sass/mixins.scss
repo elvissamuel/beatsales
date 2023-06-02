@@ -1,0 +1,110 @@
+@import "./Variables.scss";
+
+@mixin headFont1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin headFont2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+}
+
+@mixin headFont3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.42886px;
+  text-transform: uppercase;
+}
+
+@mixin headFont4 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin headFont5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+}
+
+@mixin headFont6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@mixin overlineFont {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #646262;
+}
+
+@mixin subTitle {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #939292;
+}
+
+@mixin bodyFont {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  mix-blend-mode: normal;
+  color: #ffffff;
+}
+@mixin subFont {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #757373;
+}
+
+@mixin centerItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin primary_btn {
+  background-color: $CTAColor;
+  color: $baseColor;
+}
+
+@mixin secondary_btn {
+  background-color: $secondaryColor;
+  color: $baseColor;
+}

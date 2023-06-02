@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.Navbar {
+  background-color: #000000;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-block: 30px;
+  justify-content: space-evenly;
+}
+
+.fas {
+  color: #f1f1f1;
+  width: 16px;
+  cursor: pointer;
+}/*# sourceMappingURL=Navbar.css.map */
